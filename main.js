@@ -1,11 +1,12 @@
 function check(){
         let correctAns1 = 'carname = "volvo"';
+        let correctAns2 = 'carname="volvo'
         let input = document.getElementById("q1").value;
         
         let score=0;
         
     
-    if(input.toLowerCase() == correctAns1) {
+    if(input.toLowerCase() == correctAns1 || correctAns2) {
         score++;
         alert("That is correct")
         alert("You have a total of " + score + " points")
@@ -13,7 +14,6 @@ function check(){
         alert("Incorrect")
         };
     };
-    
     
 
     document.getElementById("testForm").addEventListener("submit", function(e){
