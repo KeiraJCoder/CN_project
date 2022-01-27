@@ -33,28 +33,24 @@ function check2(){
 
 
 function check3(){
-    let c3 = 'my_first_name = "John"';
-    let c4 = 'my_first_name="John"';
-    let input = document.getElementById("q3").value;
-    let score = 2;
+        let a3 = 'my_first_name = "john"';
+        let a4 = 'my_first_name="john"';
+        let input = document.getElementById("q3").value;
+        let score = 2;
     
-if(input.toLowerCase() == c3 || input.toLowerCase() == c4) {
-    score++;
-    alert("That is correct")
-     alert("You have a total of " + score + " points")
-}else{
-    alert("Incorrect. Remember to use snake case")
+    if(input.toLowerCase() == a3 || input.toLowerCase() == a4) {
+        score++;
+        alert("That is correct")
+        alert("You have a total of " + score + " points")
+    }else{
+        alert("Incorrect. Remember to use snake case")
+        };
     };
-};
 
-
-
-document.getElementById("testForm").addEventListener("submit", function(e){
+    document.getElementById("QUESTIONS").addEventListener("submit", function(e){
     e.preventDefault();
     });
-    document.getElementById("testForm2").addEventListener("submit", function(e){
-        e.preventDefault();
-        });
+   
     
 
 
