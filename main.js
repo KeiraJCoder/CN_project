@@ -21,7 +21,7 @@ function check(){
         let cA2 = 'i=50';
         let input = document.getElementById("q2").value;
             
-        let score=score+score;
+ 
             
         
     if(input.toLowerCase() == cA1 || cA2) {
@@ -38,7 +38,7 @@ function check(){
         let cA4 = 'my_first_name="John';
         let input = document.getElementById("q3").value;
             
-        let score=score+score;
+        
             
         
     if(input.toLowerCase() == cA3 || cA4) {
