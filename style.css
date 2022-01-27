@@ -53,9 +53,9 @@
   
   input[type=submit] {
     text-align: center;
-    padding:2%;
-    font-size: 0.4em;
-    background-color: rgb(58, 58, 226);
+    padding: 4px;
+    font-size: 0.3em;
+    background-color: rgb(255, 251, 0);
 }
 
 
