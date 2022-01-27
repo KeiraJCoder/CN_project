@@ -44,6 +44,7 @@ function check3(){
         alert("You have a total of " + score + " points")
     }else{
         alert("Incorrect. Remember to use snake case")
+        alert("Also maybe refresh your memory on naming conventions")
         };
     };
 
