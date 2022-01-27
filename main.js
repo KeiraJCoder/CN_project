@@ -1,60 +1,61 @@
 function check(){
         let correctAns1 = 'carname = "volvo"';
-        let correctAns2 = 'carname="volvo'
+        let correctAns2 = 'carname="volvo"';
         let input = document.getElementById("q1").value;
         
         let score=0;
         
     
-    if(input.toLowerCase() == correctAns1 || correctAns2) {
+    if(input.toLowerCase() == correctAns1 || input.toLowerCase() == correctAns2) {
         score++;
         alert("That is correct")
         alert("You have a total of " + score + " points")
     }else{
-        alert("Incorrect")
+        alert("Incorrect. Try to remember correct variable syntax")
         };
     };
     
 
-    function check2(){
+function check2(){
         let cA1 = 'i = 50';
         let cA2 = 'i=50';
         let input = document.getElementById("q2").value;
-            
- 
-            
+        let score = 1;
         
-    if(input.toLowerCase() == cA1 || cA2) {
+    if(input.toLowerCase() == cA1 || input.toLowerCase() == cA2) {
         score++;
         alert("That is correct")
         alert("You have a total of " + score + " points")
     }else{
-        alert("Incorrect")
+        alert("Incorrect. Integers don't need parenthesis")
         };
     };
 
-    function check3(){
-        let cA3 = 'my_first_name = "John';
-        let cA4 = 'my_first_name="John';
-        let input = document.getElementById("q3").value;
-            
-        
-            
-        
-    if(input.toLowerCase() == cA3 || cA4) {
-        score++;
-        alert("That is correct")
-        alert("You have a total of " + score + " points")
-    }else{
-        alert("Incorrect")
-        };
+
+function check3(){
+    let c3 = 'my_first_name = "John"';
+    let c4 = 'my_first_name="John"';
+    let input = document.getElementById("q3").value;
+    let score = 2;
+    
+if(input.toLowerCase() == c3 || input.toLowerCase() == c4) {
+    score++;
+    alert("That is correct")
+     alert("You have a total of " + score + " points")
+}else{
+    alert("Incorrect. Remember to use snake case")
     };
+};
 
 
 
 document.getElementById("testForm").addEventListener("submit", function(e){
     e.preventDefault();
     });
+    document.getElementById("testForm2").addEventListener("submit", function(e){
+        e.preventDefault();
+        });
+    
 
 
 // function check(){
