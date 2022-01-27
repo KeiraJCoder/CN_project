@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    
     <title>Python Games</title>
 </head>
 <body>
@@ -15,17 +15,19 @@
     <p>Enter your answer to each task and then press submit at the end to get your score!</p>
     <p>Have fun!</p>
 
-<div id="question1">
-    <form onsubmit="check()"><br><br>
-        <h2>Task 1</h2> 
 
-        <p>Create a variable called carname and give it a value of Volvo</p>
-        <input type="text" name="q1"><br>
+    <div id="testForm">
+        <form onsubmit="check(); return false"><br><br>
+            <h2>Task 1</h2> 
+    
+            <p>Create a variable called carname and give it a value of Volvo</p>
+            <input type="text" id="q1" value><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+    </div>
 
-        <input type="submit" value="Submit">
-    </form>
-
-</div>
 
 
 
@@ -56,5 +58,6 @@
 </div>
 <br>
     </form> -->
+    <script src="main.js"></script>
 </body>
 </html>

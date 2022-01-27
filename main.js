@@ -1,21 +1,46 @@
 function check(){
-        let correctAns1= 'carname = "Volvo"' || 'carname = "volvo"' || 'carname="volvo"' || 'carname="Volvo"';
+        let correctAns1 = 'carname = "volvo"';
         let input = document.getElementById("q1").value;
-        console.log(`testing input value:${input}`)
+        
         let score=0;
         
     
-    if(input == correctAns1) {
+    if(input.toLowerCase() == correctAns1) {
         score++;
-        console.log("That is correct")
-        console.log(score)
+        alert("That is correct")
+        alert("You have a total of " + score + " points")
     }else{
-        console.log("Incorrect")
+        alert("Incorrect")
         };
     };
     
     
-    check();
+
+    document.getElementById("testForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        });
+
+
+
+// function check(){
+//         let correctAns1= 'carname="Volvo"';
+//         let input = document.getElementById(question1);
+//         console.log(`testing input value:${input}`)
+//         let score=0;
+//         console.log(`testing input value:${input}`)
+        
+    
+//     if(input.toLowerCase == correctAns1) {
+//         score++;
+//         alert("That is correct")
+//         alert(score)
+//     }else{
+//         alert("Incorrect")
+//         };
+//     };
+    
+    
+//     check();
 
 
 
