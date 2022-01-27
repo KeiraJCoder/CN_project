@@ -1,9 +1,25 @@
 function check(){
+    let cAns1 = 'print("hello world")';
+    let input = document.getElementById("q").value;
+    
+    let score=0;
+    
+
+if(input.toLowerCase() == cAns1 ) {
+    score++;
+    alert("That is correct")
+    alert("You have a total of " + score + " points")
+}else{
+    alert("Incorrect. Try to remember correct variable syntax")
+    };
+};
+
+function check1(){
         let correctAns1 = 'carname = "volvo"';
         let correctAns2 = 'carname="volvo"';
         let input = document.getElementById("q1").value;
         
-        let score=0;
+        let score=1;
         
     
     if(input.toLowerCase() == correctAns1 || input.toLowerCase() == correctAns2) {
@@ -20,7 +36,7 @@ function check2(){
         let cA1 = 'i = 50';
         let cA2 = 'i=50';
         let input = document.getElementById("q2").value;
-        let score = 1;
+        let score = 2;
         
     if(input.toLowerCase() == cA1 || input.toLowerCase() == cA2) {
         score++;
@@ -36,7 +52,7 @@ function check3(){
         let a3 = 'my_first_name = "john"';
         let a4 = 'my_first_name="john"';
         let input = document.getElementById("q3").value;
-        let score = 2;
+        let score = 3;
     
     if(input.toLowerCase() == a3 || input.toLowerCase() == a4) {
         score++;
@@ -47,6 +63,23 @@ function check3(){
         alert("Also maybe refresh your memory on naming conventions")
         };
     };
+
+    function check4(){
+        let qA1 = 'print("i live in england".upper())';
+        let qA2 = 'print("I LIVE IN ENGLAND")'
+        let input = document.getElementById("q4").value;
+        let score = 4;
+        
+    if(input.toLowerCase() == qA1) {
+        score++;
+        alert("That is correct")
+        alert("You have a total of " + score + " points")
+    }else if(input == qA2){
+         alert("Nice try, now do it using code")
+    } else {
+        alert("Incorrect. Did you forget brackets?")
+    };
+};
 
     document.getElementById("QUESTIONS").addEventListener("submit", function(e){
     e.preventDefault();

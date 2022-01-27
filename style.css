@@ -1,121 +1,133 @@
 @font-face {
-    font-family: "GilroyExtraBold";
-    src: url("Gilroy-ExtraBold.otf");
+  font-family: "GilroyExtraBold";
+  src: url("Gilroy-ExtraBold.otf");
 }
   
 @font-face {
-    font-family: "GilroyLight";
-    src: url("Gilroy-Light.otf");
-  }
+  font-family: "GilroyLight";
+  src: url("Gilroy-Light.otf");
+}
 
 *{
-      box-sizing: border-box;
-      padding:20px;
+  box-sizing: border-box;
+  padding:20px;
+}
+
+body {
+  background-color: rgb(39, 78, 155);
+  text-align:center;
+
   }
 
-  body {
-    
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-color: rgb(39, 78, 155);
-    text-align:center;
-  }
+.btn{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width:auto;
+
+}
+.btn:hover {
+  background-color: rgb(39, 78, 155);
+
+}
   
 
 code {
-    display:inline-flex;
-    font-size: 30px;
-    color:greenyellow;
-    background-color: black;
-    flex-wrap: wrap;
+  display:inline-block;
+  text-align: center;
+  font-size: 23px;
+  color:greenyellow;
 }
 
 form {
-    border-style: double;
-    border-color: rgb(255, 255, 255);
-    border-width: 10px;
-    background-color: rgb(0, 0, 0);
-    width:100%;
-    font-size: 50px;
-    }
-
-.button{
-    display:flex;
-    justify-content: left;
-
-  }
-  
-  input[type=submit] {
-    text-align: center;
-    padding: 3px;
-    font-size: 0.3em;
-    background-color: rgb(255, 251, 0);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border-style: double;
+  border-color: rgb(255, 255, 255);
+  border-width: 10px;
+  background-color: rgb(0, 0, 0);
+  width:auto;
+  font-size: 50px;
 }
 
 
+input{
+  display:flex;
+  align-self: center;
+  flex-wrap: wrap;
+  width:60%;
+
+}
+  
+input[type=submit] {
+ 
+  padding: 7px;
+  font-size: 0.3em;
+  background-color: rgb(255, 251, 0);
+}
 
 h1 {
-    font-family: "GilroyExtraBold", serif;
-    font-size: 6vw;
-    color: #f5b32f;
-    padding-left: 1vw;
-    text-align: center;
-  }
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "GilroyExtraBold", serif;
+  font-size: 6vw;
+  color: #f5b32f;
+  text-shadow: black 2px 2px;
+  text-align: center;
+}
   
 h2, h3 {
-    font-family: "GilroyExtraBold", serif;
-    margin-top: 0;
-    font-size: 3vw;
-    text-align: center;
-    padding-left: 0vw;
-    color: #f5b32f;
-  }
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "GilroyExtraBold", serif;
+  font-size: 3vw;
+  text-align: center;
+  color: #f5b32f;
+}
   
 p {
-    font-family: "gilroylight", serif;
-    position:relative;
-    display:block;
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-  }
+  font-family: "gilroylight", serif;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2vw;
+  color: #f5b32f;
+  
+}
   
 a {
-    position:relative;
-    text-align: center;
-    display: block;
-    font-size: 2.5vw;
-    color: #f5b32f;
-    font-family: "GilroyExtraBold", serif;
-  }
+  position:relative;
+  text-align: center;
+  display: block;
+  font-size: 2.5vw;
+  color: #f5b32f;
+  font-family: "GilroyExtraBold", serif;
+}
   
   
 img {
-    display: flex;
-    justify-content:center;
-    height: auto;
-    width: 20%;
-    opacity:65%;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+  display: flex;
+  justify-content:center;
+  height: auto;
+  width: 20%;
+  opacity:65%;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
   }
   
   
-a:focus {
-    color: #f5b32f;
-  }
-  
-a:hover {
-    color:rgb(218, 215, 52);
-  }
-  
-
-  
-ul {
-    display: block;
-    text-align: center;
-    font-family: "gilroylight", serif;
-    font-size: 25px;
-    color: #f5b32f;
+.btn:focus {
+  color: #f5b32f;
 }
   
+ul {
+  display: block;
+  text-align: center;
+  font-family: "gilroylight", serif;
+  font-size: 25px;
+  color: #f5b32f;
+}
