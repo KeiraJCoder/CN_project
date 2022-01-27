@@ -16,10 +16,45 @@ function check(){
     };
     
 
-    document.getElementById("testForm").addEventListener("submit", function(e){
-        e.preventDefault();
-        });
+    function check2(){
+        let cA1 = 'i = 50';
+        let cA2 = 'i=50';
+        let input = document.getElementById("q2").value;
+            
+        let score=score+score;
+            
+        
+    if(input.toLowerCase() == cA1 || cA2) {
+        score++;
+        alert("That is correct")
+        alert("You have a total of " + score + " points")
+    }else{
+        alert("Incorrect")
+        };
+    };
 
+    function check3(){
+        let cA3 = 'my_first_name = "John';
+        let cA4 = 'my_first_name="John';
+        let input = document.getElementById("q3").value;
+            
+        let score=score+score;
+            
+        
+    if(input.toLowerCase() == cA3 || cA4) {
+        score++;
+        alert("That is correct")
+        alert("You have a total of " + score + " points")
+    }else{
+        alert("Incorrect")
+        };
+    };
+
+
+
+document.getElementById("testForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    });
 
 
 // function check(){

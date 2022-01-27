@@ -1,73 +1,60 @@
 @font-face {
     font-family: "GilroyExtraBold";
     src: url("Gilroy-ExtraBold.otf");
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: "GilroyLight";
     src: url("Gilroy-Light.otf");
   }
-  *{
+
+*{
       box-sizing: border-box;
       padding:20px;
   }
 
-  ​ h1 {
-    font-family: "GilroyExtraBold", serif;
-  }
-  
-  p {
-    display:block;
-    font-family: "gilroylight", serif;
-  }
-
-  form {
-    border-style: double;
-    border-color: rgb(255, 255, 255);
-    border-width: 10px;
-    background-color: rgb(0, 0, 0);
-    width:100%;
-    font-size: 50px;
-    
-  }
-
-  .button{
-    display:flex;
-    justify-content: center;
-    height:40px;
-    font-size: 60px;
-  }
-
-  .submit {
-    
-    height:60px;
-  }
-
-  code {
-    display:inline-flex;
-    font-size: 30px;
-    color:greenyellow;
-    background-color: black;
-    flex-wrap: wrap;
-  }
-  
-  input[type=submit] {
-    text-align: center;
-    padding: 4px;
-    font-size: 0.3em;
-    background-color: rgb(255, 251, 0);
-}
-
-
   body {
-    padding-top:3%;
+    
     background-position: fixed;
     background-repeat: no-repeat;
     background-color: rgb(39, 78, 155);
     text-align:center;
   }
   
-  h1 {
+
+code {
+    display:inline-flex;
+    font-size: 30px;
+    color:greenyellow;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+form {
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    font-size: 50px;
+    }
+
+.button{
+    display:flex;
+    justify-content: left;
+
+  }
+  
+  input[type=submit] {
+    text-align: center;
+    padding: 3px;
+    font-size: 0.3em;
+    background-color: rgb(255, 251, 0);
+}
+
+
+
+h1 {
     font-family: "GilroyExtraBold", serif;
     font-size: 6vw;
     color: #f5b32f;
@@ -75,7 +62,7 @@
     text-align: center;
   }
   
-  h2 {
+h2, h3 {
     font-family: "GilroyExtraBold", serif;
     margin-top: 0;
     font-size: 3vw;
@@ -84,16 +71,7 @@
     color: #f5b32f;
   }
   
-  h3 {
-    font-family: "GilroyExtraBold", serif;
-    margin-top: 0;
-    font-size: 3vw;
-    text-align: center;
-    padding-left: 0vw;
-    color: #f5b32f;
-  }
-  
-  p {
+p {
     font-family: "gilroylight", serif;
     position:relative;
     display:block;
@@ -102,7 +80,7 @@
     color: white;
   }
   
-  a {
+a {
     position:relative;
     text-align: center;
     display: block;
@@ -111,24 +89,10 @@
     font-family: "GilroyExtraBold", serif;
   }
   
-  #overlay { position: relative; left: 0px; top: 144%; height: 60%; width: 100%;
-    z-index: 9998; }
   
-  #overlay2 { position: relative; left: 0px; top: 74%; height: 10%; width: 100%;
-      z-index: 9998;  overflow: hidden;}
-  
-  #overlay3 { position: relative; left: 0px; top: 90%; height: 10%; width: 100%;
-      z-index: 9998; overflow:hidden;}
-  
-  #overlay4 { position: relative; left: 0px; top: 100%; height: 10%; width: 100%;
-        z-index: 9998; overflow: hidden;}
-    
-  
-  img {
+img {
     display: flex;
-    margin-top: 0%;
-    margin-left: auto;
-    margin-right: 3.5%;
+    justify-content:center;
     height: auto;
     width: 20%;
     opacity:65%;
@@ -137,197 +101,21 @@
   }
   
   
-  a:focus {
+a:focus {
     color: #f5b32f;
   }
   
-  a:hover {
+a:hover {
     color:rgb(218, 215, 52);
   }
   
-  .nav {
-    position: fixed;
-    z-index: 9999;
-    display: table-cell;
-  }
+
   
-  .nav a {
-    float: left;
-    display: block;
-    color: #f5b32f;
-    text-align: center;
-    padding-top: 5%;
-    padding: 15px 20px;
-    text-decoration: black;
-    font-size: 30px;
-  }
-  
-  .nav a:hover {
-    background-color: #f5b32f;
-    color: rgb(1, 1, 1);
-  }
-  video {
-    object-fit: fill;
-  }
-  
-  .fullscreen-bg {
-    position: fixed;
-    background-color: rgb(39, 78, 155);
-    opacity: 20%;
-    width: 100%;
-    height: auto;
-    top: 0;
-    right: -2;
-    bottom: 0;
-    left: -2;
-  }
-  
-  .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .video-background {
-    background: #000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -99;
-  }
-  
-  .video-foreground,
-  .video-background iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  #vidtop-content {
-    top: 0;
-    min-width: 100%;
-  }
-  .vid-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 33%;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 1rem;
-    font-family: Avenir, Helvetica, sans-serif;
-  }
-  
-  .vid-info h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 0;
-    line-height: 1.2;
-  }
-  
-  .vid-info a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.5);
-    transition: 0.6s background;
-    border-bottom: none;
-    margin: 1rem auto;
-    text-align: center;
-  }
-  
-  @media (min-aspect-ratio: 16/9) {
-    .video-foreground {
-      height: 300%;
-      top: -100%;
-    }
-  }
-  
-  @media (max-aspect-ratio: 16/9) {
-    .video-foreground {
-      width: 300%;
-      left: -100%;
-    }
-  }
-  
-  @media all and (max-width: 600px) {
-    .vid-info {
-      width: 50%;
-      padding: 0.5rem;
-    }
-    .vid-info h1 {
-      margin-bottom: 0.2rem;
-    }
-  }
-  @media all and (max-width: 500px) {
-    .vid-info .acronym {
-      display: none;
-    }
-  }
-  
-  ul {
+ul {
     display: block;
     text-align: center;
     font-family: "gilroylight", serif;
     font-size: 25px;
     color: #f5b32f;
-  }
-  
-  .dropbtn {
-    background-color: #f5b32f;
-    color: #274e9b;
-    padding: 10px;
-    border-radius: 15px 15px;
-    margin-left: 30px;
-    margin-top: 40%;
-    font-size: 25px;
-    border-style: groove;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: #cdcccc;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    font-family: 'gilroylight', serif;
-    position: absolute;
-    background-color: #274e9b;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: #f5b32f;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {
-    background-color: #ddd;
-  }
-  
-  .show {
-    display: block;
-  }
+}
   
