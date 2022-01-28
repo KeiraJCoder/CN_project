@@ -40,6 +40,15 @@ code {
   color:greenyellow;
 }
 
+.code1 {
+  display:block;
+}
+
+.error {
+  color:red;
+  text-align: start;
+}
+
 form {
   display:flex;
   justify-content: center;

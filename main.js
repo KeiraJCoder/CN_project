@@ -102,14 +102,14 @@ if(input.toLowerCase() == queA1) {
     alert("That is correct")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect. Import libraries at the top of your page")
 };
 };
 
 // ==============================QUESTION 7=========================================
 
 function check7(){
-    let quA1 = 'print(random.randint(1-10))';
+    let quA1 = 'print(random.randint(1,10))';
     let input = document.getElementById("q7").value;
     let score = 6;
     
@@ -118,7 +118,7 @@ if(input.toLowerCase() == quA1) {
     alert("That is correct")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect. If random.random(1,10) finds a random float....")
 };
 };
 
@@ -135,7 +135,7 @@ if(input.toLowerCase() == qusA1 || input.toLowerCase() == qusA2) {
     alert("That is correct")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect. input always has () after it")
 };
 };
 
@@ -151,7 +151,7 @@ if(input.toLowerCase() == quesA1) {
     alert("That is correct. Well done")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect. Print the variable")
 };
 };
 
@@ -168,7 +168,7 @@ if(input.toLowerCase() == questA1) {
     alert("That is correct. Well done")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect. Try again")
 };
 };
 
@@ -176,17 +176,117 @@ if(input.toLowerCase() == questA1) {
 
 function check11(){
     let questiA1 = 'i += 2';
+    let questiA2 = 'i+=2'
     let input = document.getElementById("q11").value;
     let score = 10;
     
-if(input.toLowerCase() == questiA1) {
+if(input.toLowerCase() == questiA1 || input.toLowerCase() == questiA2) {
     score++;
     alert("That is correct. Well done")
     alert("You have a total of " + score + " points")
 } else {
-    alert("Incorrect. Did you forget brackets?")
+    alert("Incorrect")
 };
 };
+
+// ==============================QUESTION 12=========================================
+
+function check12(){
+    let questioA1 = 'yes i can serve you';
+    let input = document.getElementById("q12").value;
+    let score = 11;
+    
+if(input.toLowerCase() == questioA1) {
+    score++;
+    alert("That is correct. Well done")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect, try again")
+};
+};
+
+// ==============================QUESTION 13=========================================
+
+function check13(){
+    let questionA1 = '1';
+    let input = document.getElementById("q13").value;
+    let score = 12;
+    
+if(input.toLowerCase() == questionA1) {
+    score++;
+    alert("Correct. You are showing the remainder!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Modulus shows the remainder")
+};
+};
+
+// ==============================QUESTION 14=========================================
+
+function check14(){
+    let questionsA1 = 'password is too short';
+    let input = document.getElementById("q14").value;
+    let score = 13;
+    
+if(input.toLowerCase() == questionsA1) {
+    score++;
+    alert("Correct. Length of the password is less than 8")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember len checks the length")
+};
+};
+
+// ==============================QUESTION 15=========================================
+
+function check15(){
+    let questionsB1 = 'fizz buzz';
+    let questionsB2 = 'fizzbuzz';
+    let input = document.getElementById("q15").value;
+    let score = 14;
+    
+if(input.toLowerCase() == questionsB1 || input.toLowerCase() == questionsB2) {
+    score++;
+    alert("Correct. 21 is divisible by 3 AND 7!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember % shows if theres any remainder")
+};
+};
+
+// ==============================QUESTION 16=========================================
+
+function check16(){
+    let questionsC1 = 'coffee_order("large", "latte")';
+    let questionsC2 = 'coffee_order("large","latte") ';
+    let input = document.getElementById("q16").value;
+    let score = 15;
+    
+if(input.toLowerCase() == questionsC1 || input.toLowerCase() == questionsC2) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect.Remember to input your order in a string!")
+};
+};
+
+// ==============================QUESTION 17=========================================
+
+function check17(){
+    let questionsC1 = 'global balance';
+    let input = document.getElementById("q17").value;
+    let score = 16;
+    
+if(input.toLowerCase() == questionsC1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Maybe the function can't access the variable?")
+};
+};
+
 
 // ==========================STOP PAGE REFRESH ON SUBMIT=============================================
 

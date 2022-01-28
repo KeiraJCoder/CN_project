@@ -152,6 +152,161 @@
     <input class="btn" type="submit" value="Submit">
 </form>
 
+<!--==============================QUESTION 12=========================================  -->
+
+
+<form onsubmit="check12(); return false">
+    <h2>Task 11</h2> 
+<p>What would you expect the terminal output to be for this code snippet?</p>
+
+<code class="code1">
+
+Age = 21 
+    <br><br>
+if age > 17: <br>
+print("Yes I can serve you")   <br>
+else:  <br>
+    print("You aren’t old enough")    <br> 
+</code>
+
+
+    <input type="text" id="q12">
+    <input class="btn" type="submit" value="Submit">
+</form>
+
+<!--==============================QUESTION 13=========================================  -->
+
+
+<form onsubmit="check13(); return false">
+    <h2>Task 11</h2> 
+<code>print(10/3)</code><p> gives a result of 9</p>
+<p>What would we expect the output be for this code? </p><code>print(10%3)</code>
+
+
+
+    <input type="text" id="q13">
+    <input class="btn" type="submit" value="Submit">
+</form>
+
+<!--==============================QUESTION 14=========================================  -->
+
+
+<form onsubmit="check14(); return false">
+    <h2>Task 11</h2> 
+<p>If you were to run this code, what would the expected output be?</p>
+
+<code>
+    password = "qwerty" <br><br>
+
+    if len(password) < 8: <br>
+    
+    print("Password is too short") <br>
+    
+    else: <br>
+    
+    print(password) </code>
+
+
+
+    <input type="text" id="q14">
+    <input class="btn" type="submit" value="Submit">
+</form>
+
+<!--==============================QUESTION 15=========================================  -->
+
+
+<form onsubmit="check15(); return false">
+    <h2>Task 11</h2> 
+<p>If you were to run this code, what would the expected output be?</p>
+
+<code>
+    num = 21 <br><br><br>
+
+if num % 3 == 0 and num % 7 == 0: <br>
+
+print("Fizz Buzz") <br><br>
+
+elif num % 7 == 0: <br>
+
+print("Buzz") <br><br>
+
+elif num % 3 == 0: <br>
+
+print("Fizz") <br><br>
+
+else: <br>
+
+print(num)  </code>
+
+    <input type="text" id="q15">
+    <input class="btn" type="submit" value="Submit">
+</form>
+
+<!--==============================QUESTION 16=========================================  -->
+
+
+<form onsubmit="check16(); return false">
+    <h2>Task 11</h2> 
+<p>What would you add to the bottom of this code to order a large latte?</p>
+
+<code>
+    def coffee_order(size, drink_type): <br><br><br>
+
+           print(f"Here’s your {size} {drink_type}.") <br>
+    
+      </code>
+
+    <input type="text" id="q16">
+    <input class="btn" type="submit" value="Submit">
+</form>
+
+<!--==============================QUESTION 17=========================================  -->
+
+
+<form onsubmit="check17(); return false">
+    <h2>Task 11</h2> 
+<p>This function isn't working, everything seems to be there but I'm getting this error</p>
+<p class="error">Traceback (most recent call last):
+    File "/Users/Desktop/CodeNation/python/Exercises/tasks.py", line 23, 
+      cash_machine(1234, 400) <br><br>
+    File "/Users/Desktop/CodeNation/python/Exercises/tasks.py", line 15, in cash_machine
+      if entered_pin == actual_pin and amount <= balance: <br><br>
+  UnboundLocalError: local variable 'balance' referenced before assignment</p>
+<p>What do I need to add to make it work?</p>
+<code>
+actual_pin = 1234 <br>
+
+balance = 500 <br><br>
+
+ 
+
+def cash_machine(entered_pin, amount): <br><br>
+
+________________<br><br>
+
+if entered_pin == actual_pin and amount <= balance: <br>
+
+balance -= amount <br>
+
+print(f"Dispensing cash of £{amount}. Your new balance is £{balance}.") <br><br>
+
+elif entered_pin == actual_pin and amount > balance: <br>
+
+print(f"Insufficient funds, you cannot withdraw £{amount}. You only have £{balance} in your account.") <br>
+
+else: <br>
+
+print("Incorrect PIN") <br><br><br>
+
+cash_machine(1234, 400) <br>
+
+
+    
+      </code>
+
+    <input type="text" id="q17">
+    <input class="btn" type="submit" value="Submit">
+</form>
 
 <!-- =======================================================================  -->
 
