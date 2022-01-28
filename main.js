@@ -513,6 +513,8 @@ if(input.toLowerCase() == questionsO9 || input.toLowerCase() == questions19) {
 };
 
 
+localStorage.setItem('questionBook', JSON.stringify(questionBookObject));
+
 
 // ==========================STOP PAGE REFRESH ON SUBMIT=============================================
 
