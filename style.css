@@ -10,12 +10,12 @@
 
 *{
   box-sizing: border-box;
-  padding:20px;
+  padding:22px;
 }
 
 body {
   background-color: rgb(39, 78, 155);
-  text-align:center;
+
 
   }
 
@@ -25,23 +25,22 @@ body {
   flex-wrap: wrap;
   text-align: center;
   width:auto;
-
 }
+
+.btn:focus {
+  color: #f5b32f;
+}
+
 .btn:hover {
   background-color: rgb(39, 78, 155);
 
 }
-  
 
 code {
   display:inline-block;
   text-align: center;
   font-size: 23px;
   color:greenyellow;
-}
-
-.code1 {
-  display:block;
 }
 
 .error {
@@ -52,12 +51,12 @@ code {
 form {
   display:flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
   border-style: double;
   border-color: rgb(255, 255, 255);
-  border-width: 10px;
+  border-width: 15px;
   background-color: rgb(0, 0, 0);
-  width:auto;
   font-size: 50px;
 }
 
@@ -67,13 +66,14 @@ input{
   align-self: center;
   flex-wrap: wrap;
   width:60%;
-
 }
   
 input[type=submit] {
  
-  padding: 7px;
-  font-size: 0.3em;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.3.5em;
   background-color: rgb(255, 251, 0);
 }
 
@@ -105,38 +105,60 @@ p {
   text-align: center;
   font-size: 2vw;
   color: #f5b32f;
-  
 }
-  
-a {
-  position:relative;
-  text-align: center;
-  display: block;
-  font-size: 2.5vw;
-  color: #f5b32f;
-  font-family: "GilroyExtraBold", serif;
-}
-  
-  
-img {
-  display: flex;
-  justify-content:center;
-  height: auto;
-  width: 20%;
-  opacity:65%;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  }
-  
-  
-.btn:focus {
-  color: #f5b32f;
-}
-  
-ul {
+
+li {
   display: block;
   text-align: center;
   font-family: "gilroylight", serif;
   font-size: 25px;
   color: #f5b32f;
+}
+
+#name{
+  display:flex;
+  padding:30px;
+  flex-direction: row;
+  align-items:center;
+  font-family: "gilroylight", serif;
+  color: #f5b32f;
+  font-size: 25px;
+  size:auto;
+}
+
+.btn2{
+  display: flex;
+  justify-self: space-evenly;
+  align-self: center;
+  width:10px;
+  text-align: center;
+  height:5px;
+
+
+}
+
+.btn2:hover {
+  background-color: rgb(56, 115, 233);
+}
+  
+.box2{
+  display:flex;
+  flex-direction: row;
+  justify-self: center;
+  width:70%;
+}
+
+#top{
+  display:flex;
+  justify-self: center;
+  text-align: center;
+  size:auto;
+}
+
+a{
+  display:flex;
+  justify-content:center;
+  color:#f5b32f;
+  font-family: "gilroylight", serif;
+
 }

@@ -274,11 +274,11 @@ if(input.toLowerCase() == questionsC1 || input.toLowerCase() == questionsC2) {
 // ==============================QUESTION 17=========================================
 
 function check17(){
-    let questionsC1 = 'global balance';
+    let questionsD1 = 'global balance';
     let input = document.getElementById("q17").value;
     let score = 16;
     
-if(input.toLowerCase() == questionsC1) {
+if(input.toLowerCase() == questionsD1) {
     score++;
     alert("Correct. Nice!!")
     alert("You have a total of " + score + " points")
@@ -286,6 +286,232 @@ if(input.toLowerCase() == questionsC1) {
     alert("Incorrect. Maybe the function can't access the variable?")
 };
 };
+
+// ==============================QUESTION 18=========================================
+
+function check18(){
+    let questionsE1 = 'fav_films=["ghostbusters", "deadpool", "titanic"]';
+    let questionsE2 = 'fav_films=["ghostbusters","deadpool","titanic"]'
+    let questionsE3 = 'fav_films = ["ghostbusters", "deadpool", "titanic"]'
+    let questionsE4 = 'fav_films = ["ghostbusters","deadpool","titanic"]'
+    let input = document.getElementById("q18").value;
+    let score = 17;
+    
+if(input.toLowerCase() == questionsE1 || input.toLowerCase() == questionsE2 || input.toLowerCase() == questionsE3 || input.toLowerCase() == questionsE4) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember list syntax")
+};
+};
+
+// ==============================QUESTION 19=========================================
+
+function check19(){
+    let questionsF1 = 'print(fav_films)';
+    let input = document.getElementById("q19").value;
+    let score = 18;
+    
+if(input.toLowerCase() == questionsF1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Maybe the function can't access the variable?")
+};
+};
+
+// ==============================QUESTION 20=========================================
+
+function check20(){
+    let questionsG1 = 'print(fav_films[0])';
+    let input = document.getElementById("q20").value;
+    let score = 19;
+    
+if(input.toLowerCase() == questionsG1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember, Python is zero indexed")
+};
+};
+
+// ==============================QUESTION 21=========================================
+
+function check21(){
+    let questionssH1 = '.pop()';
+    let input = document.getElementById("q21").value;
+    let score = 20;
+    
+if(input.toLowerCase() == questionssH1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember .pop takes no arguments")
+};
+};
+
+// ==============================QUESTION 22=========================================
+
+function check22(){
+    let questionssH1 = 'for i in range(1, 11)';
+    let questionssH2 = 'for i in range(1,11)';
+    let input = document.getElementById("q22").value;
+    let score = 21;
+    
+if(input.toLowerCase() == questionssH1|| input.toLowerCase() == questionssH2) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember .pop takes no arguments")
+};
+};
+
+// ==============================QUESTION 23=========================================
+
+function check23(){
+    let questionsI1 = 'print(i)';
+    let input = document.getElementById("q23").value;
+    let score = 22;
+    
+if(input.toLowerCase() == questionsI1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember .pop takes no arguments")
+};
+};
+
+// ==============================QUESTION 24=========================================
+
+function check24(){
+    let questionsJ1 = 'for i in range(1,10,2)';
+    let questionsJ2 = 'for i in range(1, 10, 2)';
+    let questionsJ3 = 'for i in range(1, 10, 2):';
+    let input = document.getElementById("q24").value;
+    let score = 23;
+    
+if(input.toLowerCase() == questionsJ1 || input.toLowerCase() == questionsJ2  || input.toLowerCase() == questionsJ3 ) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Remember start stop step")
+};
+};
+
+// ==============================QUESTION 25=========================================
+
+function check25(){
+    let questionsK1 = 'for i in reversed(range(10)):';
+    let questionsK2 = 'for i in range(9, -1, -1): ';
+    let questionsK3 = 'for i in range(9,-1,-1): ';
+    let questionsK4 = 'for i in reversed(range(10))';
+    let questionsK5 = 'for i in range(9, -1, -1) ';
+    let questionsK6 = 'for i in range(9,-1,-1) ';
+    let questionsK7 = 'for i in reversed(range (10))';
+    let questionsK8 = 'for i in reversed(range(10)):';
+
+    let input = document.getElementById("q25").value;
+    let score = 24;
+    
+if(input.toLowerCase() == questionsK1 || input.toLowerCase() == questionsK2 || input.toLowerCase() == questionsK3 || input.toLowerCase() == questionsK4 || input.toLowerCase() == questionsK5 || input.toLowerCase() == questionsK6 || input.toLowerCase() == questionsK7 || input.toLowerCase() == questionsK8) {
+    score++;
+    alert("Correct.")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget the colon? ")
+};
+};
+
+// ==============================QUESTION 26=========================================
+
+function check26(){
+    let questionsL1 = 'hello hello hello hello hello ';
+    let input = document.getElementById("q26").value;
+    let score = 25;
+    
+if(input.toLowerCase() == questionsL1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Python is white space dependent")
+};
+};
+
+// ==============================QUESTION 27=========================================
+
+function check27(){
+    let questionsM1 = 'indefinite';
+    let input = document.getElementById("q27").value;
+    let score = 26;
+    
+if(input.toLowerCase() == questionsM1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Python is white space dependent")
+};
+};
+
+// ==============================QUESTION 28=========================================
+
+function check28(){
+    let questionsN1 = 'n -= 1';
+    let questionsN2 = 'n-=1';
+    let input = document.getElementById("q28").value;
+    let score = 27;
+    
+if(input.toLowerCase() == questionsN1 || input.toLowerCase() == questionsN2) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. 5 will ALWAYS be more than 0")
+};
+};
+
+// ==============================QUESTION 29=========================================
+
+function check29(){
+    let questionsO1 = 'boolean';
+    let input = document.getElementById("q29").value;
+    let score = 28;
+    
+if(input.toLowerCase() == questionsO1) {
+    score++;
+    alert("Correct. Nice!!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Research data types")
+};
+};
+
+// ==============================QUESTION 30=========================================
+
+function check30(){
+    let questionsO9 = '#this is a comment';
+    let questions19 = '# this is a comment';
+    let input = document.getElementById("q30").value;
+    let score = 29;
+    
+if(input.toLowerCase() == questionsO9 || input.toLowerCase() == questions19) {
+    score++;
+    alert("Correct.")
+    alert("Well done and congratulations!")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect.")
+};
+};
+
 
 
 // ==========================STOP PAGE REFRESH ON SUBMIT=============================================

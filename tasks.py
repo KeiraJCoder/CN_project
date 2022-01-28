@@ -21,3 +21,7 @@ def cash_machine(entered_pin, amount):
           print("Incorrect PIN") 
 
 cash_machine(1234, 400) 
+
+
+for i in range(1, 11): 
+     print(i) 
