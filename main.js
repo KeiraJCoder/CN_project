@@ -1,6 +1,8 @@
-function check(){
+// ==========================QUESTION 1=============================================
+
+function check1(){
     let cAns1 = 'print("hello world")';
-    let input = document.getElementById("q").value;
+    let input = document.getElementById("q1").value;
     
     let score=0;
     
@@ -14,10 +16,12 @@ if(input.toLowerCase() == cAns1 ) {
     };
 };
 
-function check1(){
+// =============================QUESTION 2==========================================
+
+function check2(){
         let correctAns1 = 'carname = "volvo"';
         let correctAns2 = 'carname="volvo"';
-        let input = document.getElementById("q1").value;
+        let input = document.getElementById("q2").value;
         
         let score=1;
         
@@ -30,12 +34,13 @@ function check1(){
         alert("Incorrect. Try to remember correct variable syntax")
         };
     };
-    
+   
+// ============================QUESTION 3===========================================
 
-function check2(){
+function check3(){
         let cA1 = 'i = 50';
         let cA2 = 'i=50';
-        let input = document.getElementById("q2").value;
+        let input = document.getElementById("q3").value;
         let score = 2;
         
     if(input.toLowerCase() == cA1 || input.toLowerCase() == cA2) {
@@ -48,10 +53,12 @@ function check2(){
     };
 
 
-function check3(){
+// ==============================QUESTION 4=========================================
+
+function check4(){
         let a3 = 'my_first_name = "john"';
         let a4 = 'my_first_name="john"';
-        let input = document.getElementById("q3").value;
+        let input = document.getElementById("q4").value;
         let score = 3;
     
     if(input.toLowerCase() == a3 || input.toLowerCase() == a4) {
@@ -64,10 +71,12 @@ function check3(){
         };
     };
 
-    function check4(){
+
+// ==============================QUESTION 5=========================================
+    function check5(){
         let qA1 = 'print("i live in england".upper())';
         let qA2 = 'print("I LIVE IN ENGLAND")'
-        let input = document.getElementById("q4").value;
+        let input = document.getElementById("q5").value;
         let score = 4;
         
     if(input.toLowerCase() == qA1) {
@@ -81,52 +90,110 @@ function check3(){
     };
 };
 
+// =============================QUESTION 6==========================================
+
+function check6(){
+    let queA1 = 'import random';
+    let input = document.getElementById("q6").value;
+    let score = 5;
+    
+if(input.toLowerCase() == queA1) {
+    score++;
+    alert("That is correct")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+// ==============================QUESTION 7=========================================
+
+function check7(){
+    let quA1 = 'print(random.randint(1-10))';
+    let input = document.getElementById("q7").value;
+    let score = 6;
+    
+if(input.toLowerCase() == quA1) {
+    score++;
+    alert("That is correct")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+// ==============================QUESTION 8=========================================
+
+function check8(){
+    let qusA1 = 'input("what is your name?")';
+    let qusA2 = 'input("what is your name? ")'
+    let input = document.getElementById("q8").value;
+    let score = 7;
+    
+if(input.toLowerCase() == qusA1 || input.toLowerCase() == qusA2) {
+    score++;
+    alert("That is correct")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+// ==============================QUESTION 9=========================================
+
+function check9(){
+    let quesA1 = 'print(fav_drink)';
+    let input = document.getElementById("q9").value;
+    let score = 8;
+    
+if(input.toLowerCase() == quesA1) {
+    score++;
+    alert("That is correct. Well done")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+
+// ==============================QUESTION 10=========================================
+
+function check10(){
+    let questA1 = 'print(f"my favourite drink is {fav_drink}")';
+    let input = document.getElementById("q10").value;
+    let score = 9;
+    
+if(input.toLowerCase() == questA1) {
+    score++;
+    alert("That is correct. Well done")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+// ==============================QUESTION 11=========================================
+
+function check11(){
+    let questiA1 = 'i += 2';
+    let input = document.getElementById("q11").value;
+    let score = 10;
+    
+if(input.toLowerCase() == questiA1) {
+    score++;
+    alert("That is correct. Well done")
+    alert("You have a total of " + score + " points")
+} else {
+    alert("Incorrect. Did you forget brackets?")
+};
+};
+
+// ==========================STOP PAGE REFRESH ON SUBMIT=============================================
+
+
     document.getElementById("QUESTIONS").addEventListener("submit", function(e){
     e.preventDefault();
     });
    
     
 
-
-// function check(){
-//         let correctAns1= 'carname="Volvo"';
-//         let input = document.getElementById(question1);
-//         console.log(`testing input value:${input}`)
-//         let score=0;
-//         console.log(`testing input value:${input}`)
-        
-    
-//     if(input.toLowerCase == correctAns1) {
-//         score++;
-//         alert("That is correct")
-//         alert(score)
-//     }else{
-//         alert("Incorrect")
-//         };
-//     };
-    
-    
-//     check();
-
-
-
-//     let v1=document.getElementById('form').elements[0].value;
-//     let v2=document.getElementById('form').elements[1].value;
-//     let v3=document.getElementById('form').elements[2].value;
-//      console.log('came',v1, v2, v3)
-
-//     let score=0;
-    
-
-
-//     if(v2 == "i = 50" || "i=50" ){
-//             score++;
-//     }if(v3=='my_first_name = "John"' || 'my_first_name="John"'){
-//             score++;
-//     }if(score === 3) {
-//       alert('Yes correct')
-//       alert("You have a score of " + score)
-//     } else {
-//       alert('Incorrect, remember the syntax of a variable!')
-//     }
-    
