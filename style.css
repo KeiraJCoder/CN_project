@@ -81,7 +81,7 @@ input[type=submit] {
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 0.3.5em;
+  font-size: 0.4.6em;
   background-color: rgb(255, 251, 0);
 }
 
@@ -168,4 +168,10 @@ a{
   color:#f5b32f;
   font-family: "gilroylight", serif;
 
+}
+
+.logo{
+  display:flex;
+  justify-content: center;
+  width:100%;
 }
