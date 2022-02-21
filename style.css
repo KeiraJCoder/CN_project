@@ -36,14 +36,22 @@ body {
 
 }
 
+img{
+  display: flex;
+  justify-content: center;
+}
+
 code {
-  display:inline-block;
+  display:flex;
+  justify-content: center;
   text-align: center;
   font-size: 23px;
   color:greenyellow;
 }
 
 .error {
+  display:flex;
+  justify-content: center;
   color:red;
   text-align: start;
 }
@@ -108,7 +116,8 @@ p {
 }
 
 li {
-  display: block;
+  display: flex;
+  align-items:center;
   text-align: center;
   font-family: "gilroylight", serif;
   font-size: 25px;
@@ -133,8 +142,6 @@ li {
   width:10px;
   text-align: center;
   height:5px;
-
-
 }
 
 .btn2:hover {
